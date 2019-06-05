@@ -52,7 +52,7 @@ public class JedisTest {
 
         JedisPoolConfig config = new JedisPoolConfig();
         JedisCluster jedisCluster=new JedisCluster(hostAndPortSet,config);
-        jedisCluster.set("key","value");
+        jedisCluster.set("key","value1");
         jedisCluster.get("key");
 
     }
